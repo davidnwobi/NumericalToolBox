@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumLlibUp\\main.cpp",
+  "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\CVectorTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumLlibUp\\tests\\CVectorTest.cpp",
+  "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/CVectorTest.cpp",
+  "output": "tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\MatrixTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumLlibUp\\tests\\MatrixTest.cpp",
+  "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/MatrixTest.cpp",
+  "output": "tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\MatrixtoolboxTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumLlibUp\\tests\\MatrixtoolboxTest.cpp",
+  "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/MatrixtoolboxTest.cpp",
+  "output": "tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj"
+}
+]
