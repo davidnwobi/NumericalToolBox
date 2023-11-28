@@ -59,31 +59,37 @@ x = {0, 0, 0};
 MATRIXTOOLBOX::LDLTSolve(A, x, b);
 std::cout << x << "\n";
 ```
-
-// Random Matrix
-// Generate a random matrix 
+## More Matrix Tricks
+### Generate a random matrix 
+```cpp
 Matrix<double> rand_mat = MATRIXTOOLBOX::random_matrix(4, 4, -500, 500, MATRIXTOOLBOX::RandMode::POSITIVEDEF, 10);
 std::cout << rand_mat << "\n";
+```
 
-// Identity Matrix
-// Generate an identity matrix
+### Generate an identity matrix
+```cpp
 Matrix<double> identity_mat = MATRIXTOOLBOX::identity(4);
+```
 
-// Transpose
-// Transpose a matrix
+### Transpose a matrix
+```cpp
 Matrix<double> test = {3,3,3,2,1,
                             4,2,2,
                             5,6,2};
 std::cout << MATRIXTOOLBOX::Transpose(test) << "\n";
-
-//Determinant
-// Calculate the determinant of a matrix
+```
+### Calculate the determinant of a matrix
+```cpp
 double det{};
 MATRIXTOOLBOX::Determinant(test, det) ;
 //-6
 std::cout << det<< "\n";
+```
 
-// Use Inverse Iteration to find the nearest eigenvalue to a of a matrix
+## Eigen Stuff
+### Use Inverse Iteration to find the nearest eigenvalue to a of a matrix
+
+```cpp
 A = { 3, 3, 2, 1, 1,
             1, 3, 1, 
             1, 1, 4};
@@ -94,9 +100,11 @@ MATRIXTOOLBOX::EIGEN::vector_iter_inverse(A, eigenvector, 5.0, eigenvalue, 100);
 // 5.214319743184
 std::cout << "Eigenvalue: " << eigenvalue << "\n";
 std::cout << "Eigenvector: " << eigenvector << "\n";
+```
 
+### Solve Eigenvalue problem of the form BX = LAMDBA*X	
 
-// Solve Eigenvalue problem of the form BX = LAMDBA*X	
+```cpp
 Matrix <double> B = {2, 2 , 3,-1,
                             -1, 3};
 Matrix <double> LAM;
@@ -104,17 +112,19 @@ Matrix <double> LAM;
 MATRIXTOOLBOX::EIGEN::eigen_Jacobi(A, LAM, 100, true);
 //Diagonals are the eigenvalues
 std::cout << LAM << "\n";
+```
 
-
-// Solve Eigenvalue problem of the form KX = LAMDBA*M*X
-Matrix<double> K = {3,3,3,2,1,2,2,1,1,1,1};
+### Solve Eigenvalue problem of the form KX = LAMDBA*M*X
+```cpp
+Matrix<double> K = {3,3,3,2,1,
+                        2,2,1,
+                        1,1,1};
 Matrix<double> M(MATRIXTOOLBOX::identity(K.get_rows()));
 Matrix<double> X;
 Matrix<double> LAMDBA;
 std::cout << "Generalized Eigenvalue Problem\n";
 MATRIXTOOLBOX::EIGEN::generalized_eigen_Jacobi(K, X, LAMDBA, M, 100, true);
-// std::cout << K << LAMDBA * M;
-
+```
 
 // Least Squares Fit
 std::cout << "Least Squares Fit\n";
