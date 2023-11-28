@@ -28,7 +28,7 @@ CVector<double> v3 = { 1, 2, 3 };
 std::cout << m1 * v3 << "\n";
 ```
 
-#### You can assign a vector to a row of a matrix. Must be the same size as the row
+You can assign a vector to a row of a matrix. Must be the same size as the row
 ```cpp
 m1(2) = v3;
 std::cout << m1 << "\n";
@@ -93,7 +93,7 @@ x = {0, 0, 0};
 MATRIXTOOLBOX::LDLTSolve(A, x, b);
 std::cout << x << "\n";
 ```
-Use Inverse Iteration to find the eigenvalue of a matrix nearest to an initial gues
+Use Inverse Iteration to find the eigenvalue of a matrix nearest to an initial guess.
 
 ```cpp
 A = { 3, 3, 2, 1, 1,
@@ -108,7 +108,7 @@ std::cout << "Eigenvalue: " << eigenvalue << "\n";
 std::cout << "Eigenvector: " << eigenvector << "\n";
 ```
 
-Solve Eigenvalue problem of the form $$BX = \lambda{}X$$
+Solve an eigenvalue problem of the form $$BX = \lambda{}X$$
 
 ```cpp
 Matrix <double> B = {2, 2 , 3,-1,
@@ -120,7 +120,7 @@ MATRIXTOOLBOX::EIGEN::eigen_Jacobi(A, LAM, 100, true);
 std::cout << LAM << "\n";
 ```
 
-Solve Eigenvalue problem of the form $$KX = \lambda{}MX$$
+Solve a eigenvalue problem of the form $$KX = \lambda{}MX$$
 
 ```cpp
 Matrix<double> K = {3,3,3,2,1,
