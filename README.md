@@ -161,17 +161,17 @@ std::cout << "r^2 = " << r2 << "\n";
 ## Ordinary Differential Equations (ODEs)
 ### Solving Linear ODEs
 
-Solving the differential equation \(Y''' + Y'' + Y' + Y = 0\) with initial conditions, where \(Y(0) = 0\), \(Y'(0) = 0\), \(Y''(0) = 0\), and \(Y'''(0) = 10\).
+Solving the differential equation $$Y''' + Y'' + Y' + Y = 0$$ with initial conditions, where $$Y(0) = 0$$, $$Y'(0) = 0$$, $$Y''(0) = 0$$, and $$Y'''(0) = 10$$.
 
 Decouple into 3 first-order ODEs:
 
-\[
+$$
 \begin{align*}
 Y_1' &= Y_2 \\
 Y_2' &= Y_3 \\
 Y_3' &= -Y_1 - Y_2 - Y_3
 \end{align*}
-\]
+$$
 
 
 ```cpp
