@@ -163,11 +163,16 @@ std::cout << "r^2 = " << r2 << "\n";
 
 Solving the differential equation \(Y''' + Y'' + Y' + Y = 0\) with initial conditions, where \(Y(0) = 0\), \(Y'(0) = 0\), \(Y''(0) = 0\), and \(Y'''(0) = 10\).
 
-Decouple into 3 first order ODEs
+Decouple into 3 first-order ODEs:
 
-\(Y1' = Y2\)
-\(Y2' = Y3\)
-\(Y3' = -Y1 - Y2 - Y3\)
+\[
+\begin{align*}
+Y_1' &= Y_2 \\
+Y_2' &= Y_3 \\
+Y_3' &= -Y_1 - Y_2 - Y_3
+\end{align*}
+\]
+
 
 ```cpp
 LINODESOLVER::FunctionContainer functions;
