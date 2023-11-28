@@ -34,32 +34,7 @@ m1(2) = v3;
 std::cout << m1 << "\n";
 ```
 
-## Linear Algebra
-
-### System of Linear Equations
-
-#### x + y + z = 3
-#### 2x + 3y + 4z = 20
-#### x + y - z = 0
-
-```cpp
-Matrix<double> A { 3, 3, 1, 1, 1, 
-                        2, 3, 4, 
-                        1, 1, -1 };
-CVector<double> b { 3, 20, 0 };
-CVector<double> x;
-MATRIXTOOLBOX::AxEqb(A, x, b);
-std::cout << x << "\n";
-
-x = {0, 0, 0};
-MATRIXTOOLBOX::LUSolve(A, x, b);
-std::cout << x << "\n";
-
-x = {0, 0, 0};
-MATRIXTOOLBOX::LDLTSolve(A, x, b);
-std::cout << x << "\n";
-```
-## More Matrix Tricks
+## MATRIXTOOLBOX: More Matrix Tricks
 ### Generate a random matrix 
 ```cpp
 Matrix<double> rand_mat = MATRIXTOOLBOX::random_matrix(4, 4, -500, 500, MATRIXTOOLBOX::RandMode::POSITIVEDEF, 10);
@@ -86,6 +61,32 @@ MATRIXTOOLBOX::Determinant(test, det) ;
 std::cout << det<< "\n";
 ```
 
+## Linear Algebra
+
+### System of Linear Equations
+
+#### x + y + z = 3
+#### 2x + 3y + 4z = 20
+#### x + y - z = 0
+
+```cpp
+Matrix<double> A { 3, 3, 1, 1, 1, 
+                        2, 3, 4, 
+                        1, 1, -1 };
+CVector<double> b { 3, 20, 0 };
+CVector<double> x;
+MATRIXTOOLBOX::AxEqb(A, x, b);
+std::cout << x << "\n";
+
+x = {0, 0, 0};
+MATRIXTOOLBOX::LUSolve(A, x, b);
+std::cout << x << "\n";
+
+x = {0, 0, 0};
+MATRIXTOOLBOX::LDLTSolve(A, x, b);
+std::cout << x << "\n";
+```
+
 ## Eigen Stuff
 ### Use Inverse Iteration to find the nearest eigenvalue to a of a matrix
 
@@ -102,7 +103,7 @@ std::cout << "Eigenvalue: " << eigenvalue << "\n";
 std::cout << "Eigenvector: " << eigenvector << "\n";
 ```
 
-### Solve Eigenvalue problem of the form BX = LAMDBA*X	
+Solve Eigenvalue problem of the form \(BX = LAMDBA*X\)	
 
 ```cpp
 Matrix <double> B = {2, 2 , 3,-1,
@@ -114,7 +115,8 @@ MATRIXTOOLBOX::EIGEN::eigen_Jacobi(A, LAM, 100, true);
 std::cout << LAM << "\n";
 ```
 
-### Solve Eigenvalue problem of the form KX = LAMDBA*M*X
+Solve Eigenvalue problem of the form \(KX = LAMDBA*M*X\)
+
 ```cpp
 Matrix<double> K = {3,3,3,2,1,
                         2,2,1,
@@ -125,10 +127,12 @@ Matrix<double> LAMDBA;
 std::cout << "Generalized Eigenvalue Problem\n";
 MATRIXTOOLBOX::EIGEN::generalized_eigen_Jacobi(K, X, LAMDBA, M, 100, true);
 ```
+## Curve Fitting
+### Least Squares Fit
 
-// Least Squares Fit
-std::cout << "Least Squares Fit\n";
-std::cout << "Function is x^2\n";
+Performing a least squares fit to a function \(x^2\), we utilize the `LSF` class to obtain coefficients, residuals, and the coefficient of determination (\(r^2\)).
+
+```cpp
 LSF lsf;
 int terms = 3;
 x = CVector<double> {1, 2, 3, 4, 5, 6, 7};
@@ -141,9 +145,9 @@ lsf.fit(terms, x, y, coeff, residuals, r2);
 std::cout << coeff << "\n";
 std::cout << "residuals = " << residuals << "\n";
 std::cout << "r^2 = " << r2 << "\n";
-
-//Modify it a bit
-std::cout << "Add a bit of noise\n";
+```
+Modifying it a bit to introduce noise
+```cpp
 x = CVector<double> {1.01, 1.99, 3.01, 3.99, 5.01, 5.99, 7.01};
 y = CVector<double> {1.01, 3.98, 9.02, 15.99, 25.01, 35.99, 49.01};
 
@@ -151,16 +155,21 @@ lsf.fit(terms, x, y, coeff, residuals, r2);
 std::cout << coeff << "\n";
 std::cout << "residuals = " << residuals << "\n";
 std::cout << "r^2 = " << r2 << "\n";
+```
 
-//ODE Solver
-std::cout << "Solve ODEs\n";
-std::cout << "Solve Y''' + Y'' + Y' + Y = 0; Initial conditions: x = 0; Y(0) = 0, Y'(0) = 0, Y''(0) = 0, Y''(0) = 10" << "\n";
-// // Decouple into 3 first order ODEs
 
-// // Y1' = Y2
-// // Y2' = Y3
-// // Y3' = -Y1 - Y2 - Y3
+## Ordinary Differential Equations (ODEs)
+### Solving Linear ODEs
 
+Solving the differential equation \(Y''' + Y'' + Y' + Y = 0\) with initial conditions, where \(Y(0) = 0\), \(Y'(0) = 0\), \(Y''(0) = 0\), and \(Y'''(0) = 10\).
+
+Decouple into 3 first order ODEs
+
+\(Y1' = Y2\)
+\(Y2' = Y3\)
+\(Y3' = -Y1 - Y2 - Y3\)
+
+```cpp
 LINODESOLVER::FunctionContainer functions;
 functions.addFunction([](CVector<double> points) {return points(3); });
 functions.addFunction([](CVector<double> points) {return points(4); });
@@ -169,21 +178,16 @@ Matrix<double> solution;
 solution = LINODESOLVER::ode45wrapperLinear(functions, 0, 10, { 0, 0, 0, 10 }, 0.1);
 std::cout << std::setprecision(15) << solution(solution.get_rows()) << "\n";
 std::cout << "Number of points: " << solution.get_rows() << "\n";
+```
 
-//Send to file. Can be plotted in MATLAB or gnuplot if you have it
-//solution.to_file("e^2.csv");
+## Integration and Differentiation
 
-// Gnuplot gp("\"C:\\Program Files\\gnuplot\\bin\\gnuplot.exe\"");
-// solution.plot(true);
+### Integration
 
-// //MATRIXTOOLBOX::Transpose(solution).plot(gp);
-
-// Integaration
-
+```cpp
 auto integral_func = [](int FUNCNO, double x) {return x*x*x; };
 auto solution_func = [](double x) {return x*x*x*x/4; };
 
-double test_limits[] = { 1, 1024 * 1024 };
 const int FUNC_NO = 1;
 const double upper_limit = 79;
 const double lower_limit = 10;
@@ -192,9 +196,10 @@ print(std::setprecision(15), "Solution: ", solution_func(upper_limit) - solution
 print("Trapezodial: ", Trapezodial(FUNC_NO, 16356, upper_limit, lower_limit, integral_func), "\n");
 print("Simpson: ", Simpson(FUNC_NO, 16356, upper_limit, lower_limit, integral_func), "\n");
 print("Gauss-Legendre: ", quadrature(FUNC_NO, 5, upper_limit, lower_limit, integral_func), "\n");
+```
+### Differentiation
 
-//Differentiation
-
+```cpp
 auto diff_func = [](int FUNCNO, double x) {return 1000*atan(x); };
 auto diff_solution_func = [](double x) {return 1000/(1+x*x); };
 
@@ -205,3 +210,4 @@ print("Forward Difference: ", ForwardMethod(FUNC_NO, central_point, h, diff_func
 print("Backward Difference: ", BackwardMethod(FUNC_NO, central_point, h, diff_func), "\n");
 print("Central Difference: ", CentralMethod(FUNC_NO, central_point, h, diff_func), "\n");
 print("Fourth Order Central Difference: ", FourthOrderCentralMethod(FUNC_NO, central_point, h, diff_func), "\n");
+```
