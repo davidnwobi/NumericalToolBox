@@ -93,8 +93,6 @@ x = {0, 0, 0};
 MATRIXTOOLBOX::LDLTSolve(A, x, b);
 std::cout << x << "\n";
 ```
-
-## Eigen Stuff
 Use Inverse Iteration to find the eigenvalue of a matrix nearest to an initial gues
 
 ```cpp
