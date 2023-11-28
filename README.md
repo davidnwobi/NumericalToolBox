@@ -108,7 +108,7 @@ std::cout << "Eigenvalue: " << eigenvalue << "\n";
 std::cout << "Eigenvector: " << eigenvector << "\n";
 ```
 
-Solve Eigenvalue problem of the form $$\(BX = LAMDBA*X\)$$
+Solve Eigenvalue problem of the form $$\(BX = \lambda{}X\)$$
 
 ```cpp
 Matrix <double> B = {2, 2 , 3,-1,
@@ -120,7 +120,7 @@ MATRIXTOOLBOX::EIGEN::eigen_Jacobi(A, LAM, 100, true);
 std::cout << LAM << "\n";
 ```
 
-Solve Eigenvalue problem of the form $$\(KX = LAMDBA*M*X\)$$
+Solve Eigenvalue problem of the form $$\(KX = \lambda{}MX\)$$
 
 ```cpp
 Matrix<double> K = {3,3,3,2,1,
