@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(BOOST_ROOT "../Packages/boost_1_83_0")
-include_directories("../Packages/googletest")
+add_subdirectory(googletest)
 
 find_package(Boost REQUIRED)
 

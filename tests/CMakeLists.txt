@@ -1,5 +1,4 @@
 include(GoogleTest)
-
 set(TEST_FILES 
     CVectorTest.cpp
     MatrixTest.cpp

@@ -65,9 +65,16 @@ std::cout << det<< "\n";
 
 ### System of Linear Equations
 
-#### x + y + z = 3
-#### 2x + 3y + 4z = 20
-#### x + y - z = 0
+Solve the system of linear equations:
+
+$$
+\begin{align*}
+x + y + z &= 3 \\
+2x + 3y + 4z &= 20 \\
+x + y - z &= 0
+\end{align*}
+$$
+
 
 ```cpp
 Matrix<double> A { 3, 3, 1, 1, 1, 
@@ -88,7 +95,7 @@ std::cout << x << "\n";
 ```
 
 ## Eigen Stuff
-### Use Inverse Iteration to find the nearest eigenvalue to a of a matrix
+Use Inverse Iteration to find the eigenvalue of a matrix nearest to an initial gues
 
 ```cpp
 A = { 3, 3, 2, 1, 1,
@@ -103,7 +110,7 @@ std::cout << "Eigenvalue: " << eigenvalue << "\n";
 std::cout << "Eigenvector: " << eigenvector << "\n";
 ```
 
-Solve Eigenvalue problem of the form \(BX = LAMDBA*X\)	
+Solve Eigenvalue problem of the form $$\(BX = LAMDBA*X\)$$
 
 ```cpp
 Matrix <double> B = {2, 2 , 3,-1,
@@ -115,7 +122,7 @@ MATRIXTOOLBOX::EIGEN::eigen_Jacobi(A, LAM, 100, true);
 std::cout << LAM << "\n";
 ```
 
-Solve Eigenvalue problem of the form \(KX = LAMDBA*M*X\)
+Solve Eigenvalue problem of the form $$\(KX = LAMDBA*M*X\)$$
 
 ```cpp
 Matrix<double> K = {3,3,3,2,1,
@@ -130,7 +137,7 @@ MATRIXTOOLBOX::EIGEN::generalized_eigen_Jacobi(K, X, LAMDBA, M, 100, true);
 ## Curve Fitting
 ### Least Squares Fit
 
-Performing a least squares fit to a function \(x^2\), we utilize the `LSF` class to obtain coefficients, residuals, and the coefficient of determination (\(r^2\)).
+Performing a least squares fit to a function $$\(x^2\)$$, we utilize the `LSF` class to obtain coefficients, residuals, and the coefficient of determination $$\(r^2\)$$.
 
 ```cpp
 LSF lsf;

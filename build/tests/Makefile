@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp
+CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build
+CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,16 +94,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests\\CMakeFiles\progress.marks
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles 0
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests\\CMakeFiles\progress.marks
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -112,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/NumLibTests.dir/rule:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/NumLibTests.dir/rule
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/NumLibTests.dir/rule
 .PHONY : tests/CMakeFiles/NumLibTests.dir/rule
 
 # Convenience name for target.
@@ -136,7 +181,7 @@ NumLibTests: tests/CMakeFiles/NumLibTests.dir/rule
 
 # fast build rule for target.
 NumLibTests/fast:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/build
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/build
 .PHONY : NumLibTests/fast
 
 CVectorTest.obj: CVectorTest.cpp.obj
@@ -144,7 +189,7 @@ CVectorTest.obj: CVectorTest.cpp.obj
 
 # target to build an object file
 CVectorTest.cpp.obj:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj
 .PHONY : CVectorTest.cpp.obj
 
 CVectorTest.i: CVectorTest.cpp.i
@@ -152,7 +197,7 @@ CVectorTest.i: CVectorTest.cpp.i
 
 # target to preprocess a source file
 CVectorTest.cpp.i:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.i
 .PHONY : CVectorTest.cpp.i
 
 CVectorTest.s: CVectorTest.cpp.s
@@ -160,7 +205,7 @@ CVectorTest.s: CVectorTest.cpp.s
 
 # target to generate assembly for a file
 CVectorTest.cpp.s:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.s
 .PHONY : CVectorTest.cpp.s
 
 MatrixTest.obj: MatrixTest.cpp.obj
@@ -168,7 +213,7 @@ MatrixTest.obj: MatrixTest.cpp.obj
 
 # target to build an object file
 MatrixTest.cpp.obj:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj
 .PHONY : MatrixTest.cpp.obj
 
 MatrixTest.i: MatrixTest.cpp.i
@@ -176,7 +221,7 @@ MatrixTest.i: MatrixTest.cpp.i
 
 # target to preprocess a source file
 MatrixTest.cpp.i:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.i
 .PHONY : MatrixTest.cpp.i
 
 MatrixTest.s: MatrixTest.cpp.s
@@ -184,7 +229,7 @@ MatrixTest.s: MatrixTest.cpp.s
 
 # target to generate assembly for a file
 MatrixTest.cpp.s:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.s
 .PHONY : MatrixTest.cpp.s
 
 MatrixtoolboxTest.obj: MatrixtoolboxTest.cpp.obj
@@ -192,7 +237,7 @@ MatrixtoolboxTest.obj: MatrixtoolboxTest.cpp.obj
 
 # target to build an object file
 MatrixtoolboxTest.cpp.obj:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj
 .PHONY : MatrixtoolboxTest.cpp.obj
 
 MatrixtoolboxTest.i: MatrixtoolboxTest.cpp.i
@@ -200,7 +245,7 @@ MatrixtoolboxTest.i: MatrixtoolboxTest.cpp.i
 
 # target to preprocess a source file
 MatrixtoolboxTest.cpp.i:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.i
 .PHONY : MatrixtoolboxTest.cpp.i
 
 MatrixtoolboxTest.s: MatrixtoolboxTest.cpp.s
@@ -208,7 +253,7 @@ MatrixtoolboxTest.s: MatrixtoolboxTest.cpp.s
 
 # target to generate assembly for a file
 MatrixtoolboxTest.cpp.s:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\NumLibTests.dir\build.make tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.s
 .PHONY : MatrixtoolboxTest.cpp.s
 
 # Help Target
@@ -218,6 +263,10 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... NumLibTests
@@ -241,6 +290,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

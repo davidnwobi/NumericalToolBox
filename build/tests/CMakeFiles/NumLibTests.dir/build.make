@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp
+CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build
+CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/NumLibTests.dir/depend.make
@@ -70,48 +70,48 @@ include tests/CMakeFiles/NumLibTests.dir/flags.make
 
 tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/flags.make
 tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/includes_CXX.rsp
-tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/CVectorTest.cpp
+tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/CVectorTest.cpp
 tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\CVectorTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\CVectorTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\CVectorTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj"
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\CVectorTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\CVectorTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\CVectorTest.cpp
 
 tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NumLibTests.dir/CVectorTest.cpp.i"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\CVectorTest.cpp > CMakeFiles\NumLibTests.dir\CVectorTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\CVectorTest.cpp > CMakeFiles\NumLibTests.dir\CVectorTest.cpp.i
 
 tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NumLibTests.dir/CVectorTest.cpp.s"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\CVectorTest.cpp -o CMakeFiles\NumLibTests.dir\CVectorTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\CVectorTest.cpp -o CMakeFiles\NumLibTests.dir\CVectorTest.cpp.s
 
 tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/flags.make
 tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/includes_CXX.rsp
-tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/MatrixTest.cpp
+tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/MatrixTest.cpp
 tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\MatrixTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\MatrixTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj"
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\MatrixTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\MatrixTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixTest.cpp
 
 tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NumLibTests.dir/MatrixTest.cpp.i"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixTest.cpp > CMakeFiles\NumLibTests.dir\MatrixTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixTest.cpp > CMakeFiles\NumLibTests.dir\MatrixTest.cpp.i
 
 tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NumLibTests.dir/MatrixTest.cpp.s"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixTest.cpp -o CMakeFiles\NumLibTests.dir\MatrixTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixTest.cpp -o CMakeFiles\NumLibTests.dir\MatrixTest.cpp.s
 
 tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/flags.make
 tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/includes_CXX.rsp
-tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/tests/MatrixtoolboxTest.cpp
+tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/MatrixtoolboxTest.cpp
 tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj: tests/CMakeFiles/NumLibTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixtoolboxTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj"
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj -MF CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.obj.d -o CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.obj -c C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixtoolboxTest.cpp
 
 tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.i"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixtoolboxTest.cpp > CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.i
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixtoolboxTest.cpp > CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.i
 
 tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.s"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests\MatrixtoolboxTest.cpp -o CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.s
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && D:\PortableApps\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests\MatrixtoolboxTest.cpp -o CMakeFiles\NumLibTests.dir\MatrixtoolboxTest.cpp.s
 
 # Object files for target NumLibTests
 NumLibTests_OBJECTS = \
@@ -126,23 +126,25 @@ tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/build.make
+tests/NumLibTests.exe: lib/libgtest_main.a
 tests/NumLibTests.exe: libNumLib.a
+tests/NumLibTests.exe: lib/libgtest.a
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/linkLibs.rsp
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/objects1.rsp
 tests/NumLibTests.exe: tests/CMakeFiles/NumLibTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NumLibTests.exe"
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NumLibTests.dir\link.txt --verbose=$(VERBOSE)
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=NumLibTests -D TEST_EXECUTABLE=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests/NumLibTests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=NumLibTests_TESTS -D CTEST_FILE=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/tests/NumLibTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.27/Modules/GoogleTestAddTests.cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NumLibTests.exe"
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NumLibTests.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=NumLibTests -D TEST_EXECUTABLE=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests/NumLibTests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=NumLibTests_TESTS -D CTEST_FILE=C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests/NumLibTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.27/Modules/GoogleTestAddTests.cmake"
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/NumLibTests.dir/build: tests/NumLibTests.exe
 .PHONY : tests/CMakeFiles/NumLibTests.dir/build
 
 tests/CMakeFiles/NumLibTests.dir/clean:
-	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\NumLibTests.dir\cmake_clean.cmake
+	cd /d C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\NumLibTests.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/NumLibTests.dir/clean
 
 tests/CMakeFiles/NumLibTests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\tests C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\tests\CMakeFiles\NumLibTests.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\tests C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests\CMakeFiles\NumLibTests.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/NumLibTests.dir/depend
 

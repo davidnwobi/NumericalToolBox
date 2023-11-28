@@ -1,0 +1,30 @@
+Start testing: Nov 28 06:04 GMT Standard Time
+----------------------------------------------------------
+74/74 Testing: CVectorTest.Set
+74/74 Test: CVectorTest.Set
+Command: "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests/NumLibTests.exe" "--gtest_filter=CVectorTest.Set" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests
+"CVectorTest.Set" start time: Nov 28 06:04 GMT Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\googletest\googletest\src\gtest_main.cc
+Note: Google Test filter = CVectorTest.Set
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CVectorTest
+[ RUN      ] CVectorTest.Set
+[       OK ] CVectorTest.Set (1 ms)
+[----------] 1 test from CVectorTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"CVectorTest.Set" end time: Nov 28 06:04 GMT Standard Time
+"CVectorTest.Set" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 28 06:04 GMT Standard Time

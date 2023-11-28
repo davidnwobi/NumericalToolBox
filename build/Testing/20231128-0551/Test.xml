@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20231128-0551-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.27.5"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="jaba-jaba-shoo-shoo"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22621)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="6"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="35636"
+	TotalPhysicalMemory="16180"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2427"
+	>
+	<Testing>
+		<StartDateTime>Nov 28 06:04 GMT Standard Time</StartDateTime>
+		<StartTestTime>1701151469</StartTestTime>
+		<TestList>
+			<Test>./tests/CVectorTest.Set</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>CVectorTest.Set</Name>
+			<Path>./tests</Path>
+			<FullName>./tests/CVectorTest.Set</FullName>
+			<FullCommandLine>C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests\NumLibTests.exe "--gtest_filter=CVectorTest.Set" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0155554</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\tests\NumLibTests.exe "--gtest_filter=CVectorTest.Set" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUE1rwzAMvftX6NgcEui10MNoRg+DdCTtLnEITqoGb45VbKXb/v3y0ZV2ZVAdjNB71ntPaWettg20SttZAAdHLawWcufRedn1r9xYjJ0+oYzRfzAdJVXvWHNJTqNl3Je2a9HpWplSWfVtvPYy+R1tiUxFX7Ihagwyer5uvatlM3TlIB/VtUiIcQHrkQLbHoGDNowOlrB661XJDcMoQxb58lIFpOcYc+Dx0xDj3PtOM0YiDy9VwNpQpcyEoz1pR7btw4BHDrvjH/L1zisTIod0l8BYxb27CYDNyz0Iszm0PnhIZeICEysTiMdSMCoX7unT3t7ov9uAUza61endvz5l2XM8RJu4kfgBh0y2Vw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Nov 28 06:04 GMT Standard Time</EndDateTime>
+		<EndTestTime>1701151469</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

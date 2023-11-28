@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/googletest/googlemock
+# Install script for directory: C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/googletest/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/YourProjectName")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/NumLibUP")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,32 +34,32 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/PortableApps/mingw32/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/googletest/googlemock/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/googletest/googlemock/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/lib/libgmock.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/lib/libgmock.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/lib/libgmock_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/lib/libgmock_main.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/googletest/googletest/generated/gmock.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/googletest/googletest/generated/gmock.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/googletest/googletest/generated/gmock_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/googletest/googletest/generated/gmock_main.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumLlibUp/build/googletest/googletest/cmake_install.cmake")
+  include("C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/googletest/googletest/cmake_install.cmake")
 
 endif()
 

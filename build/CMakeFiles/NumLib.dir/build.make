@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp
+CMAKE_SOURCE_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build
+CMAKE_BINARY_DIR = C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NumLib.dir/depend.make
@@ -76,7 +76,7 @@ NumLib_EXTERNAL_OBJECTS =
 
 libNumLib.a: CMakeFiles/NumLib.dir/build.make
 libNumLib.a: CMakeFiles/NumLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libNumLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libNumLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\NumLib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NumLib.dir\link.txt --verbose=$(VERBOSE)
 
@@ -89,6 +89,6 @@ CMakeFiles/NumLib.dir/clean:
 .PHONY : CMakeFiles/NumLib.dir/clean
 
 CMakeFiles/NumLib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumLlibUp\build\CMakeFiles\NumLib.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build C:\Users\user\OneDrive\Desktop\object_oriented_numerical_anaylsis\NumericalToolbox\build\CMakeFiles\NumLib.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/NumLib.dir/depend
 

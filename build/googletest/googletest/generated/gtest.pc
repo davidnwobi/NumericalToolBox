@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/YourProjectName/lib
-includedir=C:/Program Files (x86)/YourProjectName/include
+libdir=C:/Program Files (x86)/NumLibUP/lib
+includedir=C:/Program Files (x86)/NumLibUP/include
 
 Name: gtest
 Description: GoogleTest (without main() function)
