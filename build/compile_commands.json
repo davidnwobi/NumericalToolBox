@@ -31,19 +31,19 @@
 },
 {
   "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests",
-  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\CVectorTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\CVectorTest.cpp",
+  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -funroll-loops -o CMakeFiles\\NumLibTests.dir\\CVectorTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\CVectorTest.cpp",
   "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/CVectorTest.cpp",
   "output": "tests/CMakeFiles/NumLibTests.dir/CVectorTest.cpp.obj"
 },
 {
   "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests",
-  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\MatrixTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\MatrixTest.cpp",
+  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -funroll-loops -o CMakeFiles\\NumLibTests.dir\\MatrixTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\MatrixTest.cpp",
   "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/MatrixTest.cpp",
   "output": "tests/CMakeFiles/NumLibTests.dir/MatrixTest.cpp.obj"
 },
 {
   "directory": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/build/tests",
-  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\NumLibTests.dir\\MatrixtoolboxTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\MatrixtoolboxTest.cpp",
+  "command": "D:\\PortableApps\\mingw32\\bin\\g++.exe  @CMakeFiles/NumLibTests.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -funroll-loops -o CMakeFiles\\NumLibTests.dir\\MatrixtoolboxTest.cpp.obj -c C:\\Users\\user\\OneDrive\\Desktop\\object_oriented_numerical_anaylsis\\NumericalToolbox\\tests\\MatrixtoolboxTest.cpp",
   "file": "C:/Users/user/OneDrive/Desktop/object_oriented_numerical_anaylsis/NumericalToolbox/tests/MatrixtoolboxTest.cpp",
   "output": "tests/CMakeFiles/NumLibTests.dir/MatrixtoolboxTest.cpp.obj"
 }
