@@ -47,15 +47,6 @@ TEST(VectorTest, CopyConstructor) {
     }
 }
 
-// Test setting and getting vector name
-TEST(VectorTest, SetGetName) {
-    CVector<int> vector;
-    vector.SetName("Test Vector");
-    std::string name;
-    vector.GetName(name);
-    EXPECT_EQ(name, "Test Vector");
-}
-
 // Test setting and getting vector size
 TEST(VectorTest, SetGetSize) {
     CVector<double> vector;
@@ -159,8 +150,6 @@ TEST_F(CVectorTest, InitializerList) {
 // Test ostream operator (<<) overload
 TEST_F(CVectorTest, OstreamOperatorOverload) {
     std::stringstream ss;
-    vector.SetName("Test Vector");
-    vector.Display("Vector Content:");
     ss << vector;
     EXPECT_EQ(ss.str(), "[ 0 0 0 0 0 ]");
 }

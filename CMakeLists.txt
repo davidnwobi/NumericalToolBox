@@ -33,6 +33,6 @@ add_executable(main
 
 
 target_link_libraries(main PRIVATE NumLib)
-
+add_compile_options(-O3 -funroll-loops)
 enable_testing()
 add_subdirectory(tests)
